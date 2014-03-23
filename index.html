@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Програм за цртање куќа</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <style type="text/css">
+    #main {
+        width: 202px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    #img-place {
+        height: 200px;
+        border: 1px solid silver;
+    }
+    #house-animation {
+        display: none;
+    }
+    </style>
+</head>
+<body>
+    <div id="main">
+        <h3>Програм за цртање куќа</h3>
+        <div id="img-place">
+            <img id="house-animation" src="house-animation.gif"/>
+        </div>
+        <br/>
+        <button id="draw-house">Нацртај ми куќа!</button>
+    </div>
+</body>
+<script type="text/javascript">
+    $('#draw-house').on('click', function() {
+        $('#house-animation').css('display', 'block');
+    })
+</script>
+</html>
